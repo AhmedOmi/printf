@@ -9,10 +9,10 @@
  */
 int p_base2(unsigned int value, int length)
 {
-	if (value / 2)
-		length = p_base2(value / 2, length + 1);
-	_putchar(value % 2 + '0');
-	return (length);
+if (value / 2)
+length = p_base2(value / 2, length + 1);
+_putchar(value % 2 + '0');
+return (length);
 }
 /**
  * p_bin - writes in binary
@@ -22,9 +22,8 @@ int p_base2(unsigned int value, int length)
  */
 int p_bin(va_list *args)
 {
-	int length = 0;
-	unsigned int value = va_arg(*args, unsigned int);
-
-	length = p_base2(value, length) + 1;
-	return (length);
+int length = 0;
+unsigned int value = va_arg(*args, unsigned int);
+length = p_base2(value, length) + 1;
+return (length);
 }

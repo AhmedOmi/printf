@@ -9,7 +9,6 @@
  */
 int p_spcl(va_list *params)
 {
-	char c = va_arg(*params, int);
-
-	return (c + 0);
+char c = va_arg(*params, int);
+return (c + 0);
 }
